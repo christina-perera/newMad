@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "497470985168",
+    "firebase_url": "https://thefeast-7c5a0.firebaseio.com",
+    "project_id": "thefeast-7c5a0",
+    "storage_bucket": "thefeast-7c5a0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:497470985168:android:21c2d000c0ea7e19",
+        "android_client_info": {
+          "package_name": "com.example.thefeast"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "497470985168-ejg2dsi11pi6pcbagdanvdv2bnlhp7iq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.thefeast",
+            "certificate_hash": "ca0f16fcc502d987fe117a16a5d463e95ea0b078"
+          }
+        },
+        {
+          "client_id": "497470985168-nrvnlf2kqqchldmqe9fkr7ec4e7jqvv1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeczA7djpOij9YG-Pt_NH2Sq7NoJzcB7M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "497470985168-nrvnlf2kqqchldmqe9fkr7ec4e7jqvv1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
