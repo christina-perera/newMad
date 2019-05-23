@@ -9,8 +9,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AddContactDetails"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".FeedBackManagement.ViewFeedBack"></activity>
+        <activity
+            android:name=".FeedBackManagement.MainFeedBack"
+            android:label="@string/title_activity_main_feed_back"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FeedBack"
+            android:label="@string/title_activity_feed_back"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".FeedBackManagement.AddFeedBack" />
+        <activity
+            android:name=".AdminPanel"
+            android:label="@string/title_activity_admin_panel"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".Login" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".AddContactDetails" />
+        <activity android:name=".WelcomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
