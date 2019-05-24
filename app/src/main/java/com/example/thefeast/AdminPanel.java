@@ -85,6 +85,7 @@ public class AdminPanel extends AppCompatActivity
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
 
+            Intent intent =  new Intent(this,MainActivity.class);
         } else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_tools) {
