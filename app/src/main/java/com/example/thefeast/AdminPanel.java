@@ -14,11 +14,17 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
+import android.widget.Button;
 
+import com.example.thefeast.BeverageManagement.MainBActivity;
+import com.example.thefeast.FeedBackManagement.AddFeedBack;
 import com.example.thefeast.FeedBackManagement.MainFeedBack;
 
 public class AdminPanel extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    Button btn1 , btn2 , btn3, btn4;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +47,12 @@ public class AdminPanel extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
+
+        btn1 = (Button) findViewById(R.id.viewAddMember);
+        btn2 = (Button) findViewById(R.id.ViewAddBeverages);
+        btn3 = (Button)findViewById(R.id.ViewaddRecipe);
+        btn4 = (Button)findViewById(R.id.ViewAddFeedback);
+
     }
 
     @Override
@@ -85,10 +97,19 @@ public class AdminPanel extends AppCompatActivity
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
 
-            Intent intent =  new Intent(this,MainActivity.class);
+            Intent intent = new Intent(AdminPanel.this, MainActivity.class);
+            startActivity(intent);
+
         } else if (id == R.id.nav_slideshow) {
 
+            Intent intent = new Intent(AdminPanel.this, Main2Activity.class);
+            startActivity(intent);
+
         } else if (id == R.id.nav_tools) {
+
+            Intent intent = new Intent(AdminPanel.this, MainBActivity.class);
+            startActivity(intent);
+
 
         } else if (id == R.id.nav_share) {
 
@@ -104,4 +125,37 @@ public class AdminPanel extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+    public void ViewAddMember(View v){
+
+        Intent intent = new Intent(AdminPanel.this,MainActivity.class);
+        startActivity(intent);
+        finish();
+
+    }
+
+    public void ViewAddBeverage(View v){
+
+        Intent intent = new Intent(AdminPanel.this,MainBActivity.class);
+        startActivity(intent);
+        finish();
+
+    }
+
+    public void ViewAddRecipe(View v){
+
+        Intent intent = new Intent(AdminPanel.this,Main2Activity.class);
+        startActivity(intent);
+        finish();
+
+    }
+    public void ViewFeedback(View v){
+
+        Intent intent = new Intent(AdminPanel.this, AddFeedBack.class);
+        startActivity(intent);
+        finish();
+
+    }
+
+
 }

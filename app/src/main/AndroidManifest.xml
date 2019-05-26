@@ -21,6 +21,10 @@
             android:label="@string/title_activity_admin_panel"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".SignUp" />
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".ViewMain2Activity" />
+        <activity android:name=".BeverageManagement.MainBActivity" />
+        <activity android:name=".BeverageManagement.ViewBActivity" />
         <activity android:name=".Login" />
 
         <activity android:name=".MainActivity" />

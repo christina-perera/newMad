@@ -25,4 +25,25 @@
     <string name="menu_send">Send</string>
     <string name="title_activity_feed_back">FeedBack</string>
     <string name="title_activity_main_feed_back">MainFeedBack</string>
+
+    <array name="feast">
+        <item>Appetizers</item>
+        <item>Big Plates</item>
+        <item>Salads</item>
+        <item>Sandwiches</item>
+        <item>Soups</item>
+        <item>Treats Sweets</item>
+
+    </array>
+
+    <array name="genres">
+        <item>Soft Drinks</item>
+        <item>Smoothies</item>
+        <item>Hot Drinks</item>
+        <item>Mocktails</item>
+
+    </array>
+
+
+
 </resources>

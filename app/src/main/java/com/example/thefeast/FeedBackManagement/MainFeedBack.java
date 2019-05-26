@@ -133,7 +133,7 @@ public class MainFeedBack extends AppCompatActivity
 
         dialogBuilder.setTitle("Updating FeedBack " +title);
 
-        AlertDialog alertDialog = dialogBuilder.create();
+       final AlertDialog alertDialog = dialogBuilder.create();
         alertDialog.show();
 
         updateButton.setOnClickListener(new View.OnClickListener() {
@@ -149,7 +149,7 @@ public class MainFeedBack extends AppCompatActivity
                 }
 
                 updateFeedBack(feedBackId,title,des);
-
+                alertDialog.dismiss();
             }
         });
 
@@ -157,6 +157,7 @@ public class MainFeedBack extends AppCompatActivity
             @Override
             public void onClick(View v) {
                 deleteFeedback(feedBackId );
+                alertDialog.dismiss();
             }
         });
 
